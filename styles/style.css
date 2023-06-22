@@ -1,0 +1,76 @@
+* {
+    padding: 0; 
+    margin: 0; 
+}
+
+#bg-image {
+    width: 100vw; 
+    height: 100vh; 
+    display: grid; 
+    grid-template-areas: 
+        "top-left top top-right"
+        "mid-left mid mid-right"
+        "botm-left botm botm-right"; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.widget {
+    height: 90%; 
+    width: 90%;
+    margin: 1.5rem auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; 
+    font-family: monospace;
+    background: linear-gradient(129.28deg, rgba(149, 255, 17, 0.99) 0%, rgba(90, 179, 121, 0) 100%);
+}
+
+.widget > h2 {
+    font-size: 2rem;
+    margin: 0.5rem; 
+}
+
+.widget > h3 {
+    font-size: 1.5rem;
+    margin: 1rem; 
+    padding: 1rem; 
+}
+
+.widget > h4 {
+    font-size: 1rem;
+}
+
+.widget > p {
+    padding: 1rem; 
+}
+
+.api-widget-one {
+    grid-area: top-left;
+}
+
+.kanye-quote {
+    font-size: 1.2rem; 
+}
+
+.weather-widget {
+    grid-area: top-right; 
+}
+
+.time-widget {
+    grid-area: mid; 
+}
+
+.credit-widget {
+    grid-area: botm-left
+}
+
+.credit-link {
+    color: white; 
+}
+
+.api-widget-two {
+    grid-area: botm-right; 
+}

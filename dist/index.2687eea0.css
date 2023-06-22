@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bg-image {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "top-left top top-right"
+                       "mid-left mid mid-right"
+                       "botm-left botm botm-right";
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+.widget {
+  color: #fff;
+  background: linear-gradient(129.28deg, #95ff11fc 0%, #5ab37900 100%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  margin: 1.5rem auto;
+  font-family: monospace;
+  display: flex;
+}
+
+.widget > h2 {
+  margin: .5rem;
+  font-size: 2rem;
+}
+
+.widget > h3 {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.widget > h4 {
+  font-size: 1rem;
+}
+
+.widget > p {
+  padding: 1rem;
+}
+
+.api-widget-one {
+  grid-area: top-left;
+}
+
+.kanye-quote {
+  font-size: 1.2rem;
+}
+
+.weather-widget {
+  grid-area: top-right;
+}
+
+.time-widget {
+  grid-area: mid;
+}
+
+.credit-widget {
+  grid-area: botm-left;
+}
+
+.credit-link {
+  color: #fff;
+}
+
+.api-widget-two {
+  grid-area: botm-right;
+}
+
+/*# sourceMappingURL=index.2687eea0.css.map */
